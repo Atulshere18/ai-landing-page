@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+Here’s a `README.md` file for your **Frontend**:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# AI Landing Page Frontend
 
-In the project directory, you can run:
+This repository contains the frontend for an AI Landing Page application. It allows users to submit their details, which are sent to the backend for storage.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Interactive form for capturing user leads.
+* Responsive design for seamless user experience across devices.
+* API integration for storing user data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+* **React.js**: Frontend framework.
+* **CSS**: Styling for the application.
+* **React Hook Form**: Form handling.
+* **Deployed on**: https://vercel.com/atulshere18s-projects/ai-agent-landing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+Ensure you have the following installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Node.js (v14 or higher)
+* A package manager (npm or yarn)
+* A text editor or IDE (e.g., VS Code)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/yourusername/ai-landing-page-frontend.git
+   cd ai-landing-page-frontend
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Update the API URL in your `LeadForm.js` or appropriate file:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```javascript
+   const API_URL = "https://ai-landing-page-backend-8.onrender.co/api/store-lead";
+   ```
 
-## Learn More
+4. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   The app will run at `http://localhost:3000`.
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Open the application in your browser at `http://localhost:3000`.
+2. Fill out the lead form with your details (name, email, phone number).
+3. Submit the form to store the data.
 
-### Analyzing the Bundle Size
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The frontend is deployed on [Vercel](https://vercel.com/) (or any other platform). You can access it at:
 
-### Making a Progressive Web App
+* Deployed URL: `https://vercel.com/atulshere18s-projects/ai-agent-landing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Troubleshooting
 
-### Advanced Configuration
+### Common Issues
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **CORS Errors**:
 
-### Deployment
+   * Ensure the backend allows requests from your deployed frontend URL.
+   * Check the API URL in your frontend code and ensure it's correct.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Form Submission Issues**:
 
-### `npm run build` fails to minify
+   * Verify the API endpoint in `LeadForm.js`.
+   * Check browser console logs for errors.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Styling Issues**:
+
+   * Ensure CSS files or libraries are correctly imported.
+
