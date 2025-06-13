@@ -17,7 +17,7 @@ This repository contains the frontend for an AI Landing Page application. It all
 * **React.js**: Frontend framework.
 * **CSS**: Styling for the application.
 * **React Hook Form**: Form handling.
-* **Deployed on**: https://vercel.com/atulshere18s-projects/ai-agent-landing
+* **Deployed on**: https://ai-agent-landing-three.vercel.app/
 
 ## Prerequisites
 
